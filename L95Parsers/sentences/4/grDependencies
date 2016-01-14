@@ -1,0 +1,21 @@
+At_IN least_JJS two_CD men_NNS broke_VBD in_RP and_CC stole_VBD my_PRP$ TV_NN ._.
+
+case(least-2, At-1)         =
+nmod:npmod(two-3, least-2)  =  
+nummod(men-4, two-3)        =   (|ncmod| |num| |man+s_NN2-4| |two_MC-3|)
+nsubj(broke-5, men-4)       =
+nsubj(stole-8, men-4)       =
+root(ROOT-0, broke-5)       =
+compound:prt(broke-5, in-6) =   (|ncmod| |prt| |break+ed_VVD-5| |in_RP-6|)
+cc(broke-5, and-7)          =   (|conj| |and_CC-7| |break+ed_VVD-5|)
+conj:and(broke-5, stole-8)  =
+nmod:poss(TV-10, my-9)      =   (|det| TV_NN1 |my_APP$-9|)
+dobj(stole-8, TV-10)        =   (|dobj| |steal+ed_VVD-8| TV_NN1)
+
+
+(|ncmod| _ |and_CC-7| |At_RR-1|)
+(|ncmod| _ |and_CC-7| |least_RR-2|)
+(|ncsubj| |and_CC-7| |man+s_NN2-4| _)
+(|conj| |and_CC-7| |steal+ed_VVD-8|)
+
+

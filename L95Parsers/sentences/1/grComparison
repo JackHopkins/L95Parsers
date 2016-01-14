@@ -1,0 +1,27 @@
+det(horse-2, The-1)             =   (|det| |horse_NN1-2| |The_AT-1|)
+dobj(wanted-10, horse-2)        =
+nsubj(eat-12, horse-2)          =
+nsubj(escaped-14, horse-2)      =   (|ncsubj| |escape+ed_VVN-14| |horse_NN1-2| _)
+cc(horse-2, as-3)               =   (|pmod| |horse_NN1-2| |as_CSA-5-3|)
+mwe(as-3, well-4)               =   (|ncmod| _ |as_CSA-5-3| |well_RP-4|)
+mwe(as-3, as-5)                 =   (|iobj| |as_CSA-5-3-5-3| |as_CSA-5-3-5-3|) ??
+det(rabbits-7, the-6)           =   (|det| |rabbit+s_NN2-7| |the_AT-6|)
+conj:and(horse-2, rabbits-7)    =
+dobj(wanted-10, rabbits-7)      =   (|cmod| _ |rabbit+s_NN2-7| |want+ed_VVD-10|) ??
+nsubj(eat-12, rabbits-7)        =
+nsubj(escaped-14, rabbits-7)    =
+ref(horse-2, which-8)           =
+nsubj(wanted-10, we-9)          =   (|ncsubj| |want+ed_VVD-10| |we_PPIS2-9| _)
+acl:relcl(horse-2, wanted-10)   =
+  
+mark(eat-12, to-11)             =   (|xcomp| |to| |want+ed_VVD-10| |eat_VV0-12|)
+xcomp(wanted-10, eat-12)        =   (|xcomp| |to| |want+ed_VVD-10| |eat_VV0-12|)
+
+aux(escaped-14, have-13)        =   (|aux| |escape+ed_VVN-14| |have_VH0-13|)
+root(ROOT-0, escaped-14)        =
+
+
+
+(|dobj| |as_CSA-5-3| |rabbit+s_NN2-7|)
+(|obj| |want+ed_VVD-10| |which_DDQ-8|)
+

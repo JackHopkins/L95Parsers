@@ -1,0 +1,43 @@
+Pos Tags (Stanford, Berkeley, Rasp)
+This_DT is_VBZ a_DT ship-shipping_JJ ship_NN ,_, shipping_VBG shipping_NN ships_NNS ._.
+This_DT is_VBZ a_DT ship-shipping_JJ ship,_NN shipping_NN shipping_NN ships._NN 
+This_DD1 be+s_VBZ \a_AT1 ship-shipping_JJ ship_NN1 ,_, ship+ing_VVG shipping_NN1 ship+s_NN2 ._. 
+
+
+Full Tree (Stanford, Berkeley, Rasp)
+( ( S( NP( DT This))( VP( VBZ is)( NP( DT a)( JJ ship-shipping)( NN ship))( , ,)( S( VP( VBG shipping)( NP( NN shipping)( NNS ships)))))( . .)))
+( ( S( NP( DT This))( VP( VBZ is)( NP( DT a)( JJ ship-shipping)( NN ship,)( NN shipping)( NN shipping)( NN ships.)))) )
+( ( S ( S( DD1 This) ( VP( VBZ be+s) ( NP( AT1 a)( JJ ship-shipping)( NN1 ship))))(, ,) ( VP( VVG ship+ing) ( NP( NN1 shipping)( NN2 ship+s))))(. .))
+
+Treebank-format Tree (Stanford, Berkeley, Rasp)
+( (S (NP (DT  This))(VP (VBZ  is)(NP (DT  a)(JJ  ship-shipping)(NN  ship))( , ,)(S (VP (VBG  shipping)(NP (NN  shipping)(NNS  ships)))))( . .)))
+( (S (NP (DT  This))(VP (VBZ  is)(NP (DT  a)(JJ  ship-shipping)(NN  ship,)(NN  shipping)(NN  shipping)(NN  ships.)))) )
+( (S  (S (DD1  This) (VP (VBZ  be+s) (NP (AT1  a)(JJ  ship-shipping)(NN1  ship))))(, ,) (VP (VVG  ship+ing) (NP (NN1  shipping)(NN2  ship+s))))(. .))
+
+
+Dependencies (Stanford, Berkeley, Rasp)
+nsubj(ship-5, This-1)
+cop(ship-5, is-2)
+det(ship-5, a-3)
+amod(ship-5, ship-shipping-4)
+root(ROOT-0, ship-5)
+advcl(ship-5, shipping-7)
+compound(ships-9, shipping-8)
+dobj(shipping-7, ships-9)
+
+nsubj(ships-8, This-1)
+cop(ships-8, is-2)
+det(ships-8, a-3)
+amod(ships-8, ship-shipping-4)
+compound(ships-8, ship-5)
+compound(ships-8, shipping-6)
+compound(ships-8, shipping-7)
+root(ROOT-0, ships-8)
+
+(|xmod| _ |be+s_VBZ-2| |ship+ing_VVG-7|)
+(|dobj| |ship+ing_VVG-7| |ship+s_NN2-9|)
+(|ncmod| _ |ship+s_NN2-9| |shipping_NN1-8|)
+(|ncsubj| |be+s_VBZ-2| |This_DD1-1| _)
+(|xcomp| _ |be+s_VBZ-2| |ship_NN1-5|)
+(|det| |ship_NN1-5| \a_AT1)
+(|ncmod| _ |ship_NN1-5| |ship-shipping_JJ-4|)

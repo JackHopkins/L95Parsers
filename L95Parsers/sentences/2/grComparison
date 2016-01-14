@@ -1,0 +1,23 @@
+
+det(rabbit-3, The-1)            =
+amod(rabbit-3, only-2)          =
+nsubjpass(eaten-9, rabbit-3)    =   (|ccomp| _ |rabbit_VV0-3| |eat+en_VVN-9|) ??
+mark(liked-7, that-4)           =
+nsubj(liked-7, I-5)             =   (|ncsubj| |like+ed_VVD-7| I_PPIS1 _)
+advmod(liked-7, ever-6)         =   (|ncmod| _ |like+ed_VVD-7| |ever_RR-6|)
+dep(rabbit-3, liked-7)          =
+auxpass(eaten-9, was-8)         =   (|aux| |eat+en_VVN-9| |be+ed_VBDZ-8|)
+root(ROOT-0, eaten-9)           =   (|passive| |eat+en_VVN-9|)
+case(parents-12, by-10)         =   (|dobj| |by_II-10| |parent+s_NN2-12|) ??
+nmod:poss(parents-12, my-11)    =   (|det| |parent+s_NN2-12| |my_APP$-11|)
+nmod:by(eaten-9, parents-12)    =
+nummod(summer-14, one-13)       =   (|det| |summer_NNT1-14| |one_MC1-13|)
+nmod:tmod(eaten-9, summer-14)   =   (|ncmod| _ |eat+en_VVN-9| |summer_NNT1-14|)
+
+
+(|csubj| |eat+en_VVN-9| |like+ed_VVD-7| |that|)
+(|ncmod| _ |eat+en_VVN-9| |by_II-10|)
+
+
+
+

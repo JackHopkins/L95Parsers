@@ -1,0 +1,60 @@
+Pos Tags (Stanford, Berkeley, Rasp)
+The_DT only_JJ rabbit_NN that_IN I_PRP ever_RB liked_VBD was_VBD eaten_VBN by_IN my_PRP$ parents_NNS one_CD summer_NN ._.
+The_DT only_JJ rabbit_NN that_IN I_PRP ever_RB liked_VBD was_VBD eaten_VBN by_IN parents_NNS one_CD summer._NN 
+The_AT only_RR rabbit_VV0 that_CST I_PPIS1 ever_RR like+ed_VVD be+ed_VBDZ eat+en_VVN by_II my_APP$ parent+s_NN2 one_MC1 summer_NNT1 ._. 
+
+
+Full Tree (Stanford, Berkeley, Rasp)
+( ( S( NP( NP( DT The)( JJ only)( NN rabbit))( SBAR( IN that)( S( NP( PRP I))( ADVP( RB ever))( VP( VBD liked)))))( VP( VBD was)( VP( VBN eaten)( PP( IN by)( NP( PRP$ my)( NNS parents)))( NP( CD one)( NN summer))))( . .)))
+( ( S( NP( NP( DT The)( JJ only)( NN rabbit))( SBAR( WHNP( IN that))( S( NP( PRP I))( ADVP( RB ever))( VP( VBD liked)))))( VP( VBD was)( VP( VBN eaten)( PP( IN by)( NP( NP( PRP$ my)( NNS parents))( NP( CD one)( NN summer.))))))) )
+ ( ( AT The)( RR only) ( VP( VV0 rabbit) ( S( S ( CST that) ( S( PPIS1 I) ( VP( RR ever)( VVD like+ed))))( VP ( VP( VP ( VBDZ be+ed)( VVN eat+en)) ( PP( II by) ( NP( APP$ my)( NN2 parent+s)))) ( NP( MC1 one)( NNT1 summer)))))(. .))
+
+Treebank-format Tree (Stanford, Berkeley, Rasp)
+( (S (NP (NP (DT  The)(JJ  only)(NN  rabbit))(SBAR (IN  that)(S (NP (PRP  I))(ADVP (RB  ever))(VP (VBD  liked)))))(VP (VBD  was)(VP (VBN  eaten)(PP (IN  by)(NP (PRP $ my)(NNS  parents)))(NP (CD  one)(NN  summer))))( . .)))
+( (S (NP (NP (DT  The)(JJ  only)(NN  rabbit))(SBAR (WHNP (IN  that))(S (NP (PRP  I))(ADVP (RB  ever))(VP (VBD  liked)))))(VP (VBD  was)(VP (VBN  eaten)(PP (IN  by)(NP (NP (PRP $ my)(NNS  parents))(NP (CD  one)(NN  summer.))))))) )
+ ( (AT  The)(RR  only) (VP (VV0  rabbit) (S (S  (CST  that) (S (PPIS1  I) (VP (RR  ever)(VVD  like+ed))))(VP  (VP (VP  (VBDZ  be+ed)(VVN  eat+en)) (PP (II  by) (NP (APP $ my)(NN2  parent+s)))) (NP (MC1  one)(NNT1  summer)))))(. .))
+
+
+Dependencies (Stanford, Berkeley, Rasp)
+det(rabbit-3, The-1)
+amod(rabbit-3, only-2)
+nsubjpass(eaten-9, rabbit-3)
+mark(liked-7, that-4)
+nsubj(liked-7, I-5)
+advmod(liked-7, ever-6)
+dep(rabbit-3, liked-7)
+auxpass(eaten-9, was-8)
+root(ROOT-0, eaten-9)
+case(parents-12, by-10)
+nmod:poss(parents-12, my-11)
+nmod:by(eaten-9, parents-12)
+nummod(summer-14, one-13)
+nmod:tmod(eaten-9, summer-14)
+
+det(rabbit-3, The-1)
+amod(rabbit-3, only-2)
+nsubjpass(eaten-9, rabbit-3)
+dobj(liked-7, that-4)
+nsubj(liked-7, I-5)
+advmod(liked-7, ever-6)
+acl:relcl(rabbit-3, liked-7)
+auxpass(eaten-9, was-8)
+root(ROOT-0, eaten-9)
+case(parents-12, by-10)
+nmod:poss(parents-12, my-11)
+nmod(eaten-9, parents-12)
+nummod(summer.-14, one-13)
+dep(parents-12, summer.-14)
+
+
+(|ccomp| _ |rabbit_VV0-3| |eat+en_VVN-9|)
+(|csubj| |eat+en_VVN-9| |like+ed_VVD-7| |that|)
+(|ncmod| _ |eat+en_VVN-9| |summer_NNT1-14|)
+(|det| |summer_NNT1-14| |one_MC1-13|)
+(|ncmod| _ |eat+en_VVN-9| |by_II-10|)
+(|dobj| |by_II-10| |parent+s_NN2-12|)
+(|det| |parent+s_NN2-12| |my_APP$-11|)
+(|aux| |eat+en_VVN-9| |be+ed_VBDZ-8|)
+(|passive| |eat+en_VVN-9|)
+(|ncsubj| |like+ed_VVD-7| I_PPIS1 _)
+(|ncmod| _ |like+ed_VVD-7| |ever_RR-6|)

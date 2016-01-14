@@ -1,0 +1,33 @@
+amod(disasters-2, Natural-1)        =
+nsubj(occur-10, disasters-2)        =
+nsubj(cause-13, disasters-2)        =
+dep(disasters-2, storms-4)          =
+appos(storms-4, flooding-6)         =
+appos(storms-4, hurricanes-8)       =
+root(ROOT-0, occur-10)              =
+advmod(occur-10, infrequently-11)   =   (|ncmod| _ |occur_VV0-10| |infrequently_RR-11|)
+cc(occur-10, but-12)                =
+conj:but(occur-10, cause-13)        =
+dobj(cause-13, devastation-14)      =
+mark(resources-17, that-15)         =
+compound(resources-17, strains-16)  =
+dep(cause-13, resources-17)         =
+case(point-20, to-18)               =
+amod(point-20, breaking-19)         =   (|dobj| |break+ing_VVG-19| |point_NN1-20|) ??
+dep(resources-17, point-20)         =
+
+(|ncmod| _ |but_CCB-12| |Natural_JJ-1|)
+(|ncmod| _ |but_CCB-12| |disaster+s_NN2-2|)
+(|ncmod| _ |but_CCB-12| |–_JJ-3|)
+(|conj| |but_CCB-12| |storm+s_NN2-4|)
+(|conj| |but_CCB-12| |devastation_NN1-14|)
+(|ncmod| _ |devastation_NN1-14| |cause_NN1-13|)
+(|ncsubj| |strain+s_VVZ-16| |devastation_NN1-14| _)
+(|cmod| |that| |devastation_NN1-14| |strain+s_VVZ-16|)
+(|dobj| |strain+s_VVZ-16| |resource+s_NN2-17|)
+(|xmod| _ |resource+s_NN2-17| |to_II-18|)
+(|xcomp| _ |to_II-18| |break+ing_VVG-19|)
+(|ccomp| _ |storm+s_NN2-4| |occur_VV0-10|)
+(|ncsubj| |occur_VV0-10| |hurricane+s_NN2-8| _)
+(|ncmod| _ |occur_VV0-10| |–_RR-9|)
+(|ta| |bal| |storm+s_NN2-4| |flood+ing_VVG-6|)

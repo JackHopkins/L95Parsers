@@ -1,0 +1,68 @@
+English also has many words of more or less unique function, including interjections (oh, ah), negatives (no, not), politeness markers (please, thank you), and the existential ‘there’ (there are horses but not unicorns) among others.
+
+Dependencies (Stanford, Rasp)
+nsubj(has-3, English-1)                     =
+advmod(has-3, also-2)                       =
+root(ROOT-0, has-3)                         =
+amod(words-5, many-4)                       =
+dobj(has-3, words-5)                        =
+case(function-11, of-6)                     =  
+amod(function-11, more-7)                   =
+cc(more-7, or-8)                            =
+advmod(unique-10, less-9)                   =
+conj:or(more-7, unique-10)                  =
+amod(function-11, unique-10)                =
+nmod:of(words-5, function-11)               =
+case(interjections-14, including-13)        =
+nmod:including(words-5, interjections-14)   =
+discourse(ah-18, oh-16)                     =
+dep(interjections-14, ah-18)                =
+appos(interjections-14, negatives-21)       =
+discourse(not-25, no-23)                    =
+dep(negatives-21, not-25)                   =
+amod(markers-29, politeness-28)             =
+appos(interjections-14, markers-29)         =
+dep(markers-29, please-31)                  =
+dep(please-31, thank-33)                    =
+dobj(please-31, you-34)                     =
+case(existential-39, and-37)                =
+det(existential-39, the-38)                 =
+nmod:and(interjections-14, existential-39)  =
+dep(existential-39, there-41)               =
+expl(are-45, there-44)                      =
+dep(interjections-14, are-45)               =
+nsubj(are-45, horses-46)                    =
+cc(not-48, but-47)                          =
+cc(horses-46, not-48)                       =
+nsubj(are-45, unicorns-49)                  =
+conj:negcc(horses-46, unicorns-49)          =
+case(others-52, among-51)                   =
+nmod:among(interjections-14, others-52)     =
+
+(|ncmod| _ |‘there’_NN1-40| |and_CC-37|)
+(|ncmod| _ |‘there’_NN1-40| |among_II-49|)
+(|dobj| |among_II-49| |other+s_NN2-50|)
+(|ta| |bal| |‘there’_NN1-40| |be+_VBR-43|)
+(|ncsubj| |be+_VBR-43| |there_EX-42| _)
+(|xcomp| _ |be+_VBR-43| |but_CCB-45|)
+(|conj| |but_CCB-45| |horse+s_NN2-44|)
+(|ncmod| _ |unicorn+s_NN2-47| |not+_XX-46-25|)
+(|conj| |but_CCB-45| |unicorn+s_NN2-47|)
+(|det| |‘there’_NN1-40| |the_AT-38|)
+(|ncmod| _ |‘there’_NN1-40| |existential_JJ-39|)
+(|ta| |bal| |marker+s_NN2-29| |thank_VV0-33|)
+(|dobj| |thank_VV0-33| |you_PPY-34|)
+(|ncmod| _ |marker+s_NN2-29| |politeness_NN1-28|)
+(|ncmod| _ |have+s_VHZ-3| |also_RR-2|)
+(|dobj| |have+s_VHZ-3| |or_CC-8|)
+(|conj| |or_CC-8| |word+s_NN2-5|)
+(|conj| |or_CC-8| |negative+s_NN2-21|)
+(|ncmod| _ |negative+s_NN2-21| |less_DAR-9|)
+(|ncmod| _ |negative+s_NN2-21| |unique_JJ-10|)
+(|ncmod| _ |negative+s_NN2-21| |function_NN1-11|)
+(|ta| |bal| |function_NN1-11| |include+ing_VVG-13|)
+(|dobj| |include+ing_VVG-13| |interjection+s_NN2-14|)
+(|ta| |bal| |interjection+s_NN2-14| |ah_UH-18|)
+(|ncmod| _ |word+s_NN2-5| |many_DA2-4|)
+(|iobj| |word+s_NN2-5| |of_IO-6|)
+(|dobj| |of_IO-6| |more_DAR-7|)

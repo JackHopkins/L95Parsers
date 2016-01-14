@@ -1,0 +1,60 @@
+Pos Tags (Stanford, Berkeley, Rasp)
+The_DT horse_NN which_WDT Kim_NNP sometimes_NNP rides_NNS is_VBZ more_RBR bad_JJ tempered_VBN than_IN mine_NN ._.
+The_DT horse_NN which_WDT Kim_NNP sometimes_RB rides_NNS is_VBZ more_RBR bad_RB tempered_VBN than_IN mine._JJ 
+The_AT horse_NN1 which_DDQ Kim_NP1 sometimes_RR ride+s_VVZ be+s_VBZ more_DAR bad_JJ temper+ed_VVN than_CSN mine_PP$ ._. 
+
+
+Full Tree (Stanford, Berkeley, Rasp)
+( ( S( NP( NP( DT The)( NN horse))( SBAR( WHNP( WDT which))( S( NP( NNP Kim)( NNP sometimes)( NNS rides))( VP( VBZ is)  ( ADJP( RBR more)( JJ bad))))))( VP( VBN tempered)( PP( IN than)( NP( NN mine))))( . .)))
+( ( S( NP( NP( DT The)( NN horse))( SBAR( WHNP( WDT which))( S( NP( NNP Kim))( ADVP( RB sometimes))( VP( NNS rides)))))( VP( VBZ is)( ADJP( ADVP( RBR more)( RB bad))( VBN tempered)( PP( IN than)( ADJP( JJ mine.)))))) )
+( ( S( NP( AT The)( NN1 horse)( DDQ which)( NP1 Kim)) ( VP( RR sometimes) ( VP( VVZ ride+s) ( S( VBZ be+s) ( NP( DAR more)( JJ bad)( VVN temper+ed)) ( PP( CSN than)( PP$ mine))))))(. .))
+
+Treebank-format Tree (Stanford, Berkeley, Rasp)
+( (S (NP (NP (DT  The)(NN  horse))(SBAR (WHNP (WDT  which))(S (NP (NNP  Kim)(NNP  sometimes)(NNS  rides))(VP (VBZ  is)  (ADJP (RBR  more)(JJ  bad))))))(VP (VBN  tempered)(PP (IN  than)(NP (NN  mine))))( . .)))
+( (S (NP (NP (DT  The)(NN  horse))(SBAR (WHNP (WDT  which))(S (NP (NNP  Kim))(ADVP (RB  sometimes))(VP (NNS  rides)))))(VP (VBZ  is)(ADJP (ADVP (RBR  more)(RB  bad))(VBN  tempered)(PP (IN  than)(ADJP (JJ  mine.)))))) )
+( (S (NP (AT  The)(NN1  horse)(DDQ  which)(NP1  Kim)) (VP (RR  sometimes) (VP (VVZ  ride+s) (S (VBZ  be+s) (NP (DAR  more)(JJ  bad)(VVN  temper+ed)) (PP (CSN  than)(PP $ mine))))))(. .))
+
+
+Dependencies (Stanford, Berkeley, Rasp)
+det(horse-2, The-1)
+dobj(bad-9, horse-2)
+nsubj(tempered-10, horse-2)
+ref(horse-2, which-3)
+compound(rides-6, Kim-4)
+compound(rides-6, sometimes-5)
+nsubj(bad-9, rides-6)
+cop(bad-9, is-7)
+advmod(bad-9, more-8)
+acl:relcl(horse-2, bad-9)
+root(ROOT-0, tempered-10)
+case(mine-12, than-11)
+nmod:than(tempered-10, mine-12)
+
+det(horse-2, The-1)
+nsubjpass(tempered-10, horse-2)
+dobj(rides-6, which-3)
+nsubj(rides-6, Kim-4)
+advmod(rides-6, sometimes-5)
+acl:relcl(horse-2, rides-6)
+auxpass(tempered-10, is-7)
+advmod(bad-9, more-8)
+advmod(tempered-10, bad-9)
+root(ROOT-0, tempered-10)
+case(mine.-12, than-11)
+advcl(tempered-10, mine.-12)
+
+(|ncsubj| |ride+s_VVZ-6| |horse_NN1-2| _)
+(|ncmod| _ |ride+s_VVZ-6| |sometimes_RR-5|)
+(|ccomp| _ |ride+s_VVZ-6| |be+s_VBZ-7|)
+(|pcomp| |be+s_VBZ-7| |than_CSN-11|)
+(|ncsubj| |be+s_VBZ-7| |more_DAR-8| _)
+(|dobj| |than_CSN-11| |mine_PP$-12|)
+(|passive| |temper+ed_VVN-10|)
+(|ncsubj| |temper+ed_VVN-10| |more_DAR-8| |obj|)
+(|xmod| _ |more_DAR-8| |temper+ed_VVN-10|)
+(|ncmod| _ |more_DAR-8| |bad_JJ-9|)
+(|ncmod| _ |horse_NN1-2| |Kim_NP1-4|)
+(|det| |Kim_NP1-4| |which_DDQ-3|)
+(|det| |horse_NN1-2| |The_AT-1|)
+
+

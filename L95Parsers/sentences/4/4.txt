@@ -1,0 +1,50 @@
+Pos Tags (Stanford, Berkeley, Rasp)
+At_IN least_JJS two_CD men_NNS broke_VBD in_RP and_CC stole_VBD my_PRP$ TV_NN ._.
+At_IN least_JJS two_CD men_NNS broke_VBD in_RB and_CC stole_VBD TV._NN 
+At_RR least_RR two_MC man+s_NN2 break+ed_VVD in_RP and_CC steal+ed_VVD my_APP$ TV_NN1 ._. 
+
+
+Full Tree (Stanford, Berkeley, Rasp)
+( ( S( NP( QP( IN At)( JJS least)( CD two))( NNS men))( VP( VP( VBD broke)( PRT( RP in)))( CC and)( VP( VBD stole)( NP( PRP$ my)( NN TV))))( . .)))
+( ( S( NP( QP( IN At)( JJS least)( CD two))( NNS men))( VP( VP( VBD broke)( ADVP( RB in)))( CC and)( VP( VBD stole)( NP( PRP$ my)( NN TV.))))) )
+ ( ( S ( RR At) ( S( RR least) ( S( NP ( MC two)( NN2 man+s)) ( VP( V ( VVD break+ed)( RP in)) ( VP( CC and) ( VP( VVD steal+ed) ( NP( APP$ my)( NN1 TV))))))))(. .))
+
+Treebank-format Tree (Stanford, Berkeley, Rasp)
+( (S (NP (QP (IN  At)(JJS  least)(CD  two))(NNS  men))(VP (VP (VBD  broke)(PRT (RP  in)))(CC  and)(VP (VBD  stole)(NP (PRP $ my)(NN  TV))))( . .)))
+( (S (NP (QP (IN  At)(JJS  least)(CD  two))(NNS  men))(VP (VP (VBD  broke)(ADVP (RB  in)))(CC  and)(VP (VBD  stole)(NP (PRP $ my)(NN  TV.))))) )
+ ( (S  (RR  At) (S (RR  least) (S (NP  (MC  two)(NN2  man+s)) (VP (V  (VVD  break+ed)(RP  in)) (VP (CC  and) (VP (VVD  steal+ed) (NP (APP $ my)(NN1  TV))))))))(. .))
+
+
+Dependencies (Stanford, Berkeley, Rasp)
+case(least-2, At-1)
+nmod:npmod(two-3, least-2)
+nummod(men-4, two-3)
+nsubj(broke-5, men-4)
+nsubj(stole-8, men-4)
+root(ROOT-0, broke-5)
+compound:prt(broke-5, in-6)
+cc(broke-5, and-7)
+conj:and(broke-5, stole-8)
+nmod:poss(TV-10, my-9)
+dobj(stole-8, TV-10)
+
+case(least-2, At-1)
+nmod:npmod(two-3, least-2)
+nummod(men-4, two-3)
+nsubj(broke-5, men-4)
+root(ROOT-0, broke-5)
+advmod(broke-5, in-6)
+cc(broke-5, and-7)
+conj(broke-5, stole-8)
+nmod:poss(TV.-10, my-9)
+dobj(stole-8, TV.-10)
+
+(|ncmod| _ |and_CC-7| |At_RR-1|)
+(|ncmod| _ |and_CC-7| |least_RR-2|)
+(|ncsubj| |and_CC-7| |man+s_NN2-4| _)
+(|conj| |and_CC-7| |break+ed_VVD-5|)
+(|conj| |and_CC-7| |steal+ed_VVD-8|)
+(|dobj| |steal+ed_VVD-8| TV_NN1)
+(|det| TV_NN1 |my_APP$-9|)
+(|ncmod| |prt| |break+ed_VVD-5| |in_RP-6|)
+(|ncmod| |num| |man+s_NN2-4| |two_MC-3|)
