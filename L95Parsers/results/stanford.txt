@@ -1,0 +1,684 @@
+The/DT horse/NN which/WDT Kim/NNP sometimes/NNP rides/NNS is/VBZ more/RBR bad/JJ tempered/VBN than/IN mine/NN ./.
+
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN horse))
+      (SBAR
+        (WHNP (WDT which))
+        (S
+          (NP (NNP Kim) (NNP sometimes) (NNS rides))
+          (VP (VBZ is)
+            (ADJP (RBR more) (JJ bad))))))
+    (VP (VBN tempered)
+      (PP (IN than)
+        (NP (NN mine))))
+    (. .)))
+
+det(horse-2, The-1)
+dobj(bad-9, horse-2)
+nsubj(tempered-10, horse-2)
+ref(horse-2, which-3)
+compound(rides-6, Kim-4)
+compound(rides-6, sometimes-5)
+nsubj(bad-9, rides-6)
+cop(bad-9, is-7)
+advmod(bad-9, more-8)
+acl:relcl(horse-2, bad-9)
+root(ROOT-0, tempered-10)
+case(mine-12, than-11)
+nmod:than(tempered-10, mine-12)
+
+---
+
+The/DT horse/NN as/RB well/RB as/IN the/DT rabbits/NNS which/WDT we/PRP wanted/VBD to/TO eat/VB have/VBP escaped/VBN ./.
+
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (DT The) (NN horse))
+        (CONJP (RB as) (RB well) (IN as))
+        (NP (DT the) (NNS rabbits)))
+      (SBAR
+        (WHNP (WDT which))
+        (S
+          (NP (PRP we))
+          (VP (VBD wanted)
+            (S
+              (VP (TO to)
+                (VP (VB eat))))))))
+    (VP (VBP have)
+      (VP (VBN escaped)))
+    (. .)))
+
+det(horse-2, The-1)
+dobj(wanted-10, horse-2)
+nsubj(eat-12, horse-2)
+nsubj(escaped-14, horse-2)
+cc(horse-2, as-3)
+mwe(as-3, well-4)
+mwe(as-3, as-5)
+det(rabbits-7, the-6)
+conj:and(horse-2, rabbits-7)
+dobj(wanted-10, rabbits-7)
+nsubj(eat-12, rabbits-7)
+nsubj(escaped-14, rabbits-7)
+ref(horse-2, which-8)
+nsubj(wanted-10, we-9)
+acl:relcl(horse-2, wanted-10)
+mark(eat-12, to-11)
+xcomp(wanted-10, eat-12)
+aux(escaped-14, have-13)
+root(ROOT-0, escaped-14)
+
+---
+
+The/DT only/JJ rabbit/NN that/IN I/PRP ever/RB liked/VBD was/VBD eaten/VBN by/IN my/PRP$ parents/NNS one/CD summer/NN ./.
+
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (JJ only) (NN rabbit))
+      (SBAR (IN that)
+        (S
+          (NP (PRP I))
+          (ADVP (RB ever))
+          (VP (VBD liked)))))
+    (VP (VBD was)
+      (VP (VBN eaten)
+        (PP (IN by)
+          (NP (PRP$ my) (NNS parents)))
+        (NP (CD one) (NN summer))))
+    (. .)))
+
+det(rabbit-3, The-1)
+amod(rabbit-3, only-2)
+nsubjpass(eaten-9, rabbit-3)
+mark(liked-7, that-4)
+nsubj(liked-7, I-5)
+advmod(liked-7, ever-6)
+dep(rabbit-3, liked-7)
+auxpass(eaten-9, was-8)
+root(ROOT-0, eaten-9)
+case(parents-12, by-10)
+nmod:poss(parents-12, my-11)
+nmod:by(eaten-9, parents-12)
+nummod(summer-14, one-13)
+nmod:tmod(eaten-9, summer-14)
+
+---
+
+Natural/JJ disasters/NNS --/: storms/NNS ,/, flooding/NN ,/, hurricanes/NNS --/: occur/VBP infrequently/RB but/CC cause/VBP devastation/NN that/IN strains/NNS resources/NNS to/TO breaking/JJ point/NN ./.
+
+(ROOT
+  (S
+    (NP
+      (NP (JJ Natural) (NNS disasters))
+      (PRN (: --)
+        (NP
+          (NP (NNS storms))
+          (, ,)
+          (NP (NN flooding))
+          (, ,)
+          (NP (NNS hurricanes)))
+        (: --)))
+    (VP
+      (VP (VBP occur)
+        (ADVP (RB infrequently)))
+      (CC but)
+      (VP (VBP cause)
+        (NP (NN devastation))
+        (SBAR (IN that)
+          (S
+            (NP (NNS strains) (NNS resources))
+            (PP (TO to)
+              (NP (JJ breaking) (NN point)))))))
+    (. .)))
+
+amod(disasters-2, Natural-1)
+nsubj(occur-10, disasters-2)
+nsubj(cause-13, disasters-2)
+dep(disasters-2, storms-4)
+appos(storms-4, flooding-6)
+appos(storms-4, hurricanes-8)
+root(ROOT-0, occur-10)
+advmod(occur-10, infrequently-11)
+cc(occur-10, but-12)
+conj:but(occur-10, cause-13)
+dobj(cause-13, devastation-14)
+mark(resources-17, that-15)
+compound(resources-17, strains-16)
+dep(cause-13, resources-17)
+case(point-20, to-18)
+amod(point-20, breaking-19)
+dep(resources-17, point-20)
+
+---
+
+At/IN least/JJS two/CD men/NNS broke/VBD in/RP and/CC stole/VBD my/PRP$ TV/NN ./.
+
+(ROOT
+  (S
+    (NP
+      (QP (IN At) (JJS least) (CD two))
+      (NNS men))
+    (VP
+      (VP (VBD broke)
+        (PRT (RP in)))
+      (CC and)
+      (VP (VBD stole)
+        (NP (PRP$ my) (NN TV))))
+    (. .)))
+
+case(least-2, At-1)
+nmod:npmod(two-3, least-2)
+nummod(men-4, two-3)
+nsubj(broke-5, men-4)
+nsubj(stole-8, men-4)
+root(ROOT-0, broke-5)
+compound:prt(broke-5, in-6)
+cc(broke-5, and-7)
+conj:and(broke-5, stole-8)
+nmod:poss(TV-10, my-9)
+dobj(stole-8, TV-10)
+
+---
+
+English/NNP also/RB has/VBZ many/JJ words/NNS of/IN more/JJR or/CC less/RBR unique/JJ function/NN ,/, including/VBG interjections/NNS -LRB-/-LRB- oh/UH ,/, ah/NN -RRB-/-RRB- ,/, negatives/NNS -LRB-/-LRB- no/UH ,/, not/RB -RRB-/-RRB- ,/, politeness/JJ markers/NNS -LRB-/-LRB- please/VB ,/, thank/VB you/PRP -RRB-/-RRB- ,/, and/CC the/DT existential/NN `/`` there/RB '/'' -LRB-/-LRB- there/EX are/VBP horses/NNS but/CC not/RB unicorns/NNS -RRB-/-RRB- among/IN others/NNS ./.
+
+(ROOT
+  (S
+    (NP (NNP English))
+    (ADVP (RB also))
+    (VP (VBZ has)
+      (NP
+        (NP (JJ many) (NNS words))
+        (PP (IN of)
+          (NP
+            (ADJP
+              (ADJP (JJR more))
+              (CC or)
+              (ADJP (RBR less) (JJ unique)))
+            (NN function)))
+        (, ,)
+        (PP (VBG including)
+          (NP
+            (NP
+              (NP
+                (NP
+                  (NP (NNS interjections))
+                  (PRN (-LRB- -LRB-)
+                    (FRAG
+                      (INTJ (UH oh))
+                      (, ,)
+                      (NP (NN ah)))
+                    (-RRB- -RRB-)))
+                (, ,)
+                (NP
+                  (NP (NNS negatives))
+                  (PRN (-LRB- -LRB-)
+                    (FRAG
+                      (INTJ (UH no))
+                      (, ,)
+                      (NP (RB not)))
+                    (-RRB- -RRB-)))
+                (, ,)
+                (NP
+                  (NP (JJ politeness) (NNS markers))
+                  (PRN (-LRB- -LRB-)
+                    (S
+                      (VP (VB please) (, ,) (VB thank)
+                        (NP (PRP you))))
+                    (-RRB- -RRB-)))
+                (, ,)
+                (PP (CC and)
+                  (NP
+                    (NP (DT the) (NN existential))
+                    (`` `)
+                    (NP (RB there))
+                    ('' '))))
+              (PRN (-LRB- -LRB-)
+                (S
+                  (NP (EX there))
+                  (VP (VBP are)
+                    (NP
+                      (NP (NNS horses))
+                      (CONJP (CC but)
+                        (RB not))
+                      (NP (NNS unicorns)))))
+                (-RRB- -RRB-)))
+            (PP (IN among)
+              (NP (NNS others)))))))
+    (. .)))
+
+nsubj(has-3, English-1)
+advmod(has-3, also-2)
+root(ROOT-0, has-3)
+amod(words-5, many-4)
+dobj(has-3, words-5)
+case(function-11, of-6)
+amod(function-11, more-7)
+cc(more-7, or-8)
+advmod(unique-10, less-9)
+conj:or(more-7, unique-10)
+amod(function-11, unique-10)
+nmod:of(words-5, function-11)
+case(interjections-14, including-13)
+nmod:including(words-5, interjections-14)
+discourse(ah-18, oh-16)
+dep(interjections-14, ah-18)
+appos(interjections-14, negatives-21)
+discourse(not-25, no-23)
+dep(negatives-21, not-25)
+amod(markers-29, politeness-28)
+appos(interjections-14, markers-29)
+dep(markers-29, please-31)
+dep(please-31, thank-33)
+dobj(please-31, you-34)
+case(existential-39, and-37)
+det(existential-39, the-38)
+nmod:and(interjections-14, existential-39)
+dep(existential-39, there-41)
+expl(are-45, there-44)
+dep(interjections-14, are-45)
+nsubj(are-45, horses-46)
+cc(not-48, but-47)
+cc(horses-46, not-48)
+nsubj(are-45, unicorns-49)
+conj:negcc(horses-46, unicorns-49)
+case(others-52, among-51)
+nmod:among(interjections-14, others-52)
+
+---
+
+Making/VBG these/DT decisions/NNS requires/VBZ sophisticated/JJ knowledge/NN of/IN syntax/NN ;/: tagging/JJ manuals/NNS -LRB-/-LRB- Santorini/NNP ,/, 1990/CD -RRB-/-RRB- give/VBP various/JJ heuristics/NNS that/WDT can/MD help/VB human/JJ coders/NNS make/VB these/DT decisions/NNS and/CC that/WDT can/MD also/RB provide/VB useful/JJ features/NNS for/IN automatic/JJ taggers/NNS ./.
+
+(ROOT
+  (S
+    (S
+      (S
+        (VP (VBG Making)
+          (NP (DT these) (NNS decisions))))
+      (VP (VBZ requires)
+        (NP
+          (NP (JJ sophisticated) (NN knowledge))
+          (PP (IN of)
+            (NP (NN syntax))))))
+    (: ;)
+    (S
+      (NP
+        (NP (JJ tagging) (NNS manuals))
+        (PRN (-LRB- -LRB-)
+          (NP (NNP Santorini))
+          (, ,)
+          (NP (CD 1990))
+          (-RRB- -RRB-)))
+      (VP (VBP give)
+        (NP (JJ various) (NNS heuristics))
+        (NP
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (MD can)
+                (VP (VB help)
+                  (S
+                    (NP (JJ human) (NNS coders))
+                    (VP (VB make)
+                      (NP (DT these) (NNS decisions))))))))
+          (CC and)
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (MD can)
+                (ADVP (RB also))
+                (VP (VB provide)
+                  (NP (JJ useful) (NNS features))
+                  (PP (IN for)
+                    (NP (JJ automatic) (NNS taggers))))))))))
+    (. .)))
+
+csubj(requires-4, Making-1)
+det(decisions-3, these-2)
+dobj(Making-1, decisions-3)
+root(ROOT-0, requires-4)
+amod(knowledge-6, sophisticated-5)
+dobj(requires-4, knowledge-6)
+case(syntax-8, of-7)
+nmod:of(knowledge-6, syntax-8)
+amod(manuals-11, tagging-10)
+nsubj(give-17, manuals-11)
+appos(manuals-11, Santorini-13)
+dep(Santorini-13, 1990-15)
+parataxis(requires-4, give-17)
+amod(heuristics-19, various-18)
+iobj(give-17, heuristics-19)
+nsubj(help-22, that-20)
+aux(help-22, can-21)
+dobj(give-17, help-22)
+amod(coders-24, human-23)
+nsubj(make-25, coders-24)
+ccomp(help-22, make-25)
+det(decisions-27, these-26)
+dobj(make-25, decisions-27)
+cc(help-22, and-28)
+nsubj(provide-32, that-29)
+aux(provide-32, can-30)
+advmod(provide-32, also-31)
+dobj(give-17, provide-32)
+conj:and(help-22, provide-32)
+amod(features-34, useful-33)
+dobj(provide-32, features-34)
+case(taggers-37, for-35)
+amod(taggers-37, automatic-36)
+nmod:for(provide-32, taggers-37)
+
+---
+
+The/DT Penn/NNP Treebank/NNP tagset/NN was/VBD culled/VBN from/IN the/DT original/JJ 87-tag/JJ tagset/NN for/IN the/DT Brown/NNP Corpus/NNP ;/: For/IN example/NN the/DT original/JJ Brown/NNP and/CC C5/NNP tagsets/NNS include/VBP a/DT separate/JJ tag/NN for/IN each/DT of/IN the/DT different/JJ forms/NNS of/IN the/DT verbs/NNS do/VB -LRB-/-LRB- e.g./NNP C5/NNP tag/NNP VDD/NNP for/IN did/VBD and/CC VDG/VBP tag/NN for/IN doing/VBG -RRB-/-RRB- ,/, be/VB and/CC have/VB ./.
+
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NNP Penn) (NNP Treebank) (NN tagset))
+      (VP (VBD was)
+        (VP (VBN culled)
+          (PP (IN from)
+            (NP
+              (NP (DT the) (JJ original) (JJ 87-tag) (NN tagset))
+              (PP (IN for)
+                (NP (DT the) (NNP Brown) (NNP Corpus))))))))
+    (: ;)
+    (S
+      (PP (IN For)
+        (NP (NN example)))
+      (NP (DT the) (JJ original) (NNP Brown)
+        (CC and)
+        (NNP C5) (NNS tagsets))
+      (VP (VBP include)
+        (S
+          (NP
+            (NP (DT a) (JJ separate) (NN tag))
+            (PP (IN for)
+              (NP
+                (NP (DT each))
+                (PP (IN of)
+                  (NP
+                    (NP (DT the) (JJ different) (NNS forms))
+                    (PP (IN of)
+                      (NP (DT the) (NNS verbs))))))))
+          (VP
+            (VP (VB do)
+              (PRN (-LRB- -LRB-)
+                (S
+                  (NP (NNP e.g.) (NNP C5) (NNP tag) (NNP VDD) (IN for))
+                  (VP
+                    (VP (VBD did))
+                    (CC and)
+                    (VP (VBP VDG)
+                      (NP (NN tag))
+                      (PP (IN for)
+                        (S
+                          (VP (VBG doing)))))))
+                (-RRB- -RRB-)))
+            (, ,)
+            (VP (VB be))
+            (CC and)
+            (VP (VB have))))))
+    (. .)))
+
+det(tagset-4, The-1)
+compound(tagset-4, Penn-2)
+compound(tagset-4, Treebank-3)
+nsubjpass(culled-6, tagset-4)
+auxpass(culled-6, was-5)
+root(ROOT-0, culled-6)
+case(tagset-11, from-7)
+det(tagset-11, the-8)
+amod(tagset-11, original-9)
+amod(tagset-11, 87-tag-10)
+nmod:from(culled-6, tagset-11)
+case(Corpus-15, for-12)
+det(Corpus-15, the-13)
+compound(Corpus-15, Brown-14)
+nmod:for(tagset-11, Corpus-15)
+case(example-18, For-17)
+nmod:for(include-25, example-18)
+det(Brown-21, the-19)
+amod(Brown-21, original-20)
+nsubj(include-25, Brown-21)
+cc(Brown-21, and-22)
+compound(tagsets-24, C5-23)
+conj:and(Brown-21, tagsets-24)
+nsubj(include-25, tagsets-24)
+parataxis(culled-6, include-25)
+det(tag-28, a-26)
+amod(tag-28, separate-27)
+nsubj(do-38, tag-28)
+nsubj(be-53, tag-28)
+nsubj(have-55, tag-28)
+case(each-30, for-29)
+nmod:for(tag-28, each-30)
+case(forms-34, of-31)
+det(forms-34, the-32)
+amod(forms-34, different-33)
+nmod:of(each-30, forms-34)
+case(verbs-37, of-35)
+det(verbs-37, the-36)
+nmod:of(forms-34, verbs-37)
+ccomp(include-25, do-38)
+compound(VDD-43, e.g.-40)
+compound(VDD-43, C5-41)
+compound(VDD-43, tag-42)
+nsubj(did-45, VDD-43)
+nsubj(VDG-47, VDD-43)
+amod(VDD-43, for-44)
+parataxis(do-38, did-45)
+cc(did-45, and-46)
+parataxis(do-38, VDG-47)
+conj:and(did-45, VDG-47)
+dobj(VDG-47, tag-48)
+mark(doing-50, for-49)
+advcl(VDG-47, doing-50)
+ccomp(include-25, be-53)
+conj:and(do-38, be-53)
+cc(do-38, and-54)
+ccomp(include-25, have-55)
+conj:and(do-38, have-55)
+
+---
+
+The/DT slightly/RB simplified/VBN version/NN of/IN the/DT Viterbi/NNP algorithm/VBP that/IN we/PRP present/RB takes/VBZ as/IN input/NN a/DT single/JJ HMM/NN and/CC a/DT sequence/NN of/IN observed/JJ words/NNS O/NNP =/NNP -LRB-/-LRB- o1/NNS ,/, o2/NN ,/, .../: oT/NN -RRB-/-RRB- and/CC returns/VBZ the/DT most/RBS probable/JJ state/tag/NN sequence/NN Q/NNP =/NNP -LRB-/-LRB- q1/NN ,/, q2/NN ,/, qT/NN -RRB-/-RRB- together/RB with/IN its/PRP$ probability/NN ./.
+
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (RB slightly) (VBN simplified) (NN version))
+      (PP (IN of)
+        (NP (DT the) (NNP Viterbi))))
+    (VP (VBP algorithm)
+      (SBAR (IN that)
+        (S
+          (NP (PRP we))
+          (ADVP (RB present))
+          (VP
+            (VP (VBZ takes)
+              (PP (IN as)
+                (NP
+                  (NP
+                    (NP (NN input))
+                    (NP (DT a) (JJ single) (NN HMM)))
+                  (CC and)
+                  (NP
+                    (NP (DT a) (NN sequence))
+                    (PP (IN of)
+                      (NP (JJ observed) (NNS words))))))
+              (NP
+                (NP (NNP O) (NNP =))
+                (PRN (-LRB- -LRB-)
+                  (NP
+                    (NP (NNS o1) (, ,) (NN o2) (, ,))
+                    (: ...)
+                    (NP (NN oT)))
+                  (-RRB- -RRB-))))
+            (CC and)
+            (VP (VBZ returns)
+              (NP
+                (NP
+                  (NP (DT the)
+                    (ADJP (RBS most) (JJ probable))
+                    (NN state/tag))
+                  (NN sequence) (NNP Q) (NNP =))
+                (PRN (-LRB- -LRB-)
+                  (NP (NN q1) (, ,) (NN q2) (, ,) (NN qT))
+                  (-RRB- -RRB-)))
+              (PP
+                (ADVP (RB together))
+                (IN with)
+                (NP (PRP$ its) (NN probability))))))))
+    (. .)))
+
+det(version-4, The-1)
+advmod(version-4, slightly-2)
+amod(version-4, simplified-3)
+nsubj(algorithm-8, version-4)
+case(Viterbi-7, of-5)
+det(Viterbi-7, the-6)
+nmod:of(version-4, Viterbi-7)
+root(ROOT-0, algorithm-8)
+mark(takes-12, that-9)
+nsubj(takes-12, we-10)
+nsubj(returns-35, we-10)
+advmod(takes-12, present-11)
+ccomp(algorithm-8, takes-12)
+case(input-14, as-13)
+nmod:as(takes-12, input-14)
+det(HMM-17, a-15)
+amod(HMM-17, single-16)
+dep(input-14, HMM-17)
+cc(input-14, and-18)
+det(sequence-20, a-19)
+nmod:as(takes-12, sequence-20)
+conj:and(input-14, sequence-20)
+case(words-23, of-21)
+amod(words-23, observed-22)
+nmod:of(sequence-20, words-23)
+compound(=-25, O-24)
+dobj(takes-12, =-25)
+compound(o2-29, o1-27)
+dep(=-25, o2-29)
+dep(o2-29, oT-32)
+cc(takes-12, and-34)
+ccomp(algorithm-8, returns-35)
+conj:and(takes-12, returns-35)
+det(state/tag-39, the-36)
+advmod(probable-38, most-37)
+amod(state/tag-39, probable-38)
+compound(=-42, state/tag-39)
+compound(=-42, sequence-40)
+compound(=-42, Q-41)
+dobj(returns-35, =-42)
+compound(qT-48, q1-44)
+dep(qT-48, q2-46)
+appos(=-42, qT-48)
+case(probability-53, together-50)
+mwe(together-50, with-51)
+nmod:poss(probability-53, its-52)
+nmod:together_with(returns-35, probability-53)
+
+---
+
+Thus/RB the/DT EM-trained/JJ ``/`` pure/JJ HMM/NN ''/'' tagger/NN is/VBZ probably/RB best/RBS suited/VBN to/TO cases/NNS where/WRB no/DT training/NN data/NNS is/VBZ available/JJ ,/, for/IN example/NN ,/, when/WRB tagging/JJ languages/NNS for/IN which/WDT no/DT data/NNS was/VBD previously/RB hand-tagged/JJ ./.
+
+(ROOT
+  (S
+    (ADVP (RB Thus))
+    (NP (DT the) (JJ EM-trained) (`` ``) (JJ pure) (NN HMM) ('' '') (NN tagger))
+    (VP (VBZ is)
+      (ADVP (RB probably))
+      (VP
+        (ADVP (RBS best))
+        (VBN suited)
+        (PP (TO to)
+          (NP
+            (NP (NNS cases))
+            (SBAR
+              (WHADVP (WRB where))
+              (S
+                (NP (DT no) (NN training) (NNS data))
+                (VP (VBZ is)
+                  (ADJP (JJ available))
+                  (, ,)
+                  (PP (IN for)
+                    (NP
+                      (NP (NN example))
+                      (, ,)
+                      (SBAR
+                        (WHNP
+                          (NP (WRB when) (JJ tagging) (NNS languages))
+                          (WHPP (IN for)
+                            (WHNP (WDT which))))
+                        (S
+                          (NP (DT no) (NNS data))
+                          (VP (VBD was)
+                            (ADJP (RB previously) (JJ hand-tagged))))))))))))))
+    (. .)))
+
+advmod(suited-12, Thus-1)
+det(tagger-8, the-2)
+amod(tagger-8, EM-trained-3)
+amod(tagger-8, pure-5)
+compound(tagger-8, HMM-6)
+nsubjpass(suited-12, tagger-8)
+auxpass(suited-12, is-9)
+advmod(suited-12, probably-10)
+advmod(suited-12, best-11)
+root(ROOT-0, suited-12)
+case(cases-14, to-13)
+nmod:to(suited-12, cases-14)
+nmod:for(languages-27, cases-14)
+advmod(available-20, where-15)
+neg(data-18, no-16)
+compound(data-18, training-17)
+nsubj(available-20, data-18)
+cop(available-20, is-19)
+acl:relcl(cases-14, available-20)
+case(example-23, for-22)
+nmod:for(available-20, example-23)
+nmod:for(languages-27, example-23)
+advmod(languages-27, when-25)
+amod(languages-27, tagging-26)
+dobj(hand-tagged-34, languages-27)
+case(which-29, for-28)
+ref(cases-14, which-29)
+ref(example-23, which-29)
+neg(data-31, no-30)
+nsubj(hand-tagged-34, data-31)
+cop(hand-tagged-34, was-32)
+advmod(hand-tagged-34, previously-33)
+acl:relcl(example-23, hand-tagged-34)
+
+---
+
+This/DT is/VBZ a/DT ship-shipping/JJ ship/NN ,/, shipping/VBG shipping/NN ships/NNS ./.
+
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ is)
+      (NP (DT a) (JJ ship-shipping) (NN ship))
+      (, ,)
+      (S
+        (VP (VBG shipping)
+          (NP (NN shipping) (NNS ships)))))
+    (. .)))
+
+nsubj(ship-5, This-1)
+cop(ship-5, is-2)
+det(ship-5, a-3)
+amod(ship-5, ship-shipping-4)
+root(ROOT-0, ship-5)
+advcl(ship-5, shipping-7)
+compound(ships-9, shipping-8)
+dobj(shipping-7, ships-9)
+
